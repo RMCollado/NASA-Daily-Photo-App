@@ -17,7 +17,7 @@ parameters = {
 response = requests.get(url=NASA_URL, params=parameters).json()
 
 
-image = response['hdurl']
+image = response['url']
 
 st.title(response['title'])
 
